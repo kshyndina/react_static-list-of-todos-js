@@ -8,7 +8,7 @@ export const TodoInfo = ({ todo }) => (
   >
     <h2 className="TodoInfo__title">{todo.title}</h2>
 
-    <a className="UserInfo" href={todo.user.email}>
+    <a className="UserInfo" href={`mailto:${todo.user.email}`}>
       {todo.user.name}
     </a>
   </article>
